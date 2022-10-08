@@ -5,16 +5,16 @@
 #include "Adafruit_SHTC3.h"
 #include <SPI.h>
 
-#define WIFI_SSID "REPLACE_WITH_YOUR_SSID"
-#define WIFI_PASSWORD "REPLACE_WITH_YOUR_PASSWORD"
+#define WIFI_SSID "REPLACE_WITH_YOUR_SSID"                      //เปลี่ยน
+#define WIFI_PASSWORD "REPLACE_WITH_YOUR_PASSWORD"              //เปลี่ยน
 
-#define MQTT_HOST IPAddress(XXX, XXX, XXX, XXX)
+#define MQTT_HOST IPAddress(XXX, XXX, XXX, XXX)                 //เปลี่ยน
 #define MQTT_PORT 1883
 
-#define MQTT_USERNAME "REPLACE_WITH_YOUR_MQTT_USER"
-#define MQTT_PASSWORD "REPLACE_WITH_YOUR_MQTT_PASSWORD"
+#define MQTT_USERNAME "REPLACE_WITH_YOUR_MQTT_USER"             //เปลี่ยน
+#define MQTT_PASSWORD "REPLACE_WITH_YOUR_MQTT_PASSWORD"         //เปลี่ยน
 
-#define MQTT_PUB_TEST "test"
+#define MQTT_SUB_TEST "test"                                    //เปลี่ยน
 
 AsyncMqttClient mqttClient;
 Ticker mqttReconnectTimer;
