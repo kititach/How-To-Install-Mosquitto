@@ -76,4 +76,8 @@ Remove Mosquitto
 ```
 sudo apt autoremove mosquitto -y && sudo apt autoremove mosquitto-clients -y
 sudo apt purge mosquitto -y && sudo apt purge mosquitto-clients -y
+systemctl stop mosquitto.service
+systemctl disable mosquitto.service
+systemctl daemon-reload
+systemctl reset-failed
 ```
