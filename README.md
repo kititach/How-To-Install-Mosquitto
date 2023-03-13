@@ -74,8 +74,6 @@ keyfile /etc/letsencrypt/live/example.com/privkey.pem
 ```
 Remove Mosquitto
 ```
-sudo apt autoremove mosquitto -y & mosquitto-clients -y
-sudo apt autoremove mosquitto-clients -y
-sudo apt purge mosquitto -y & mosquitto-clients -y
-sudo apt purge mosquitto-clients -y
+sudo apt autoremove mosquitto -y && sudo apt autoremove mosquitto-clients -y
+sudo apt purge mosquitto -y && sudo apt purge mosquitto-clients -y
 ```
