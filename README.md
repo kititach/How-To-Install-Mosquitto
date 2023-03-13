@@ -72,3 +72,8 @@ certfile /etc/letsencrypt/live/example.com/cert.pem
 cafile /etc/letsencrypt/live/example.com/chain.pem
 keyfile /etc/letsencrypt/live/example.com/privkey.pem
 ```
+Remove Mosquitto
+```
+sudo apt autoremove mosquitto
+sudo apt purge mosquitto-clients
+```
