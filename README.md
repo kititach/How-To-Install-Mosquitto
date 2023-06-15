@@ -49,11 +49,11 @@ sudo systemctl status mosquitto
 ```
 Test mosquitto_sub 
 ```
-mosquitto_sub -h localhost -t testTopic -u user -P pass
+mosquitto_sub -h localhost -p porthost -t testTopic -u user -P pass
 ```
 Test mosquitto_pub 
 ```
-mosquitto_pub -h localhost -t testTopic -p porthost -m "Hello, world!" -u user -P pass
+mosquitto_pub -h localhost -p porthost -t testTopic  -u user -P pass -m "Hello, world!"
 ```
 ## (Optional) Taking It Further – MQTT Mosquitto Broker Encrypted Requests
 configuration file mosquitto
